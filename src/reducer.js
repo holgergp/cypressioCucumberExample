@@ -13,10 +13,10 @@ const bohnen = (state = INITIAL_STATE, action) => {
         case 'UPDATE_DATA':
             return state.map(s => {
                 if (s.id === bohne.id) {
-                    const rabatt = parseFloat(bohne.rabatt || 0.00);
-                    const vkp = parseFloat(bohne.vkp).toFixed(2);
+                    const rabatt = bohne.rabatt;
+                    const vkp = bohne.vkp;
                     const vkpRabatt = (vkp - (vkp * (rabatt / 100))).toFixed(2);
-                    const ekp = parseFloat(bohne.ekp).toFixed(2);
+                    const ekp = bohne.ekp;
                     const marge = (((vkp / ekp) - 1) * 100).toFixed(2);
                     return {
                         id: bohne.id,

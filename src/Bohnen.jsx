@@ -19,13 +19,13 @@ const Bohnen = ({bohnen, updateData}) => {
                 {bohnen && bohnen.map((bohne) => (
                     <tr key={bohne.id}>
                         <td><input type="text" id="art" onChange={(event) => updateData({...bohne, art: event.target.value})} value={bohne.art}/></td>
-                        <td><input type="number" id="ekp" onChange={(event) => updateData({...bohne, ekp: event.target.value})} value={bohne.ekp}/></td>
-                        <td><input type="number" id="marge" disabled={true} onChange={(event) => updateData({...bohne, marge: event.target.value})}
+                        <td><input type="number" step=".01" id="ekp" onChange={(event) => updateData({...bohne, ekp: event.target.value})} value={bohne.ekp}/></td>
+                        <td><input type="number" step=".01" id="marge" disabled={true} onChange={(event) => updateData({...bohne, marge: event.target.value})}
                             value={bohne.marge}/></td>
-                        <td><input type="number" id="rabatt" onChange={(event) => updateData({...bohne, rabatt: event.target.value})} value={bohne.rabatt}/>
+                        <td><input type="number" step=".01" id="rabatt" onChange={(event) => updateData({...bohne, rabatt: event.target.value})} value={bohne.rabatt}/>
                         </td>
-                        <td><input type="number" id="vkp" onChange={(event) => updateData({...bohne, vkp: event.target.value})} value={bohne.vkp}/></td>
-                        <td><input type="number" id="vkpRabatt" disabled={true} onChange={(event) => updateData({...bohne, vkpRabatt: event.target.value})} value={bohne.vkpRabatt}/></td>
+                        <td><input type="number" step=".01" id="vkp" onChange={(event) => updateData({...bohne, vkp: event.target.value})} value={bohne.vkp}/></td>
+                        <td><input type="number" step="0.01" id="vkpRabatt" disabled={true} onChange={(event) => updateData({...bohne, vkpRabatt: event.target.value})} value={bohne.vkpRabatt}/></td>
                     </tr>
                 ))}
             </tbody>

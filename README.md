@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/holgergp/cypressioCucumberExample.svg?branch=master)](https://travis-ci.org/holgergp/cypressioCucumberExample)
 
-Example Sources for my [article](https://blog.codecentric.de/2019/04/bdd-und-end-to-end-tests-cypress-io-mit-cucumber-verbinden/) about the [cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor).
+Example Sources for my [article](https://blog.codecentric.de/2019/04/bdd-und-end-to-end-tests-cypress-io-mit-cucumber-verbinden/) (just in german language for now) about the [cypress-cucumber-preprocessor](https://github.com/TheBrainFamily/cypress-cucumber-preprocessor).
 
 Available commands:
 - `yarn`: As usual please install dependecies first.

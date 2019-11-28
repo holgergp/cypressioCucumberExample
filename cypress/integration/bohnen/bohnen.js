@@ -3,7 +3,7 @@ import {Given as Angenommen, Then as Dann, When as Wenn} from 'cypress-cucumber-
 import {expectInputToEqual} from '../common/expectations';
 import {setInputValue} from '../common/puppetMaster';
 
-Angenommen('sind folgende Bohnenarten in der Anwendung sichtbar', function (dataTable) {
+Dann('sind folgende Bohnenarten in der Anwendung sichtbar', function (dataTable) {
     dataTable.hashes().forEach(d => {
         const art = d['Bohne'];
         const ekp = d['Einkaufspreis in Euro'];
